@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: cron resource
+# --
+cron { $1:
+  ## Details at http://docs.puppetlabs.com/references/latest/type.html#cron
+  ## expand "meta" to insert all Metaparameters
+
+  # command	=> "/bin/date",
+  # ensure	=> present|absent,
+  # environment => "PATH=/bin:/usr/bin:/usr/sbin", # Not sure if correct
+  # hour	=> 2|['2-4'],
+  # minute	=> '*/10',
+  # month	=> 1,
+  # monthday	=> 1,
+  # name	=> symbolic_name,
+  # special	=> ??,
+  # user	=> user_to_run_as,
+  # weekday	=> 1,
+}

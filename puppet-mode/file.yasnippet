@@ -1,0 +1,27 @@
+# -*- mode: snippet -*-
+# name: file resource
+# --
+file { "$1":
+  ## Details at http://docs.puppetlabs.com/references/latest/type.html#file
+  ## expand "meta" to insert all Metaparameters
+
+  # backup		=> false, # default true
+  # checksum		=> md5|timestamp|mtime, # default md5
+  # content		=> $str|template(puppet:///module-name/template.erb),
+  # ensure		=> absent|present|file|directory,
+  # force		=> true|false, # Only used when replacing directoried with links
+  # group		=> group_name|group_ID,
+  # ignore		=> "*.bak", # globbing
+  # links		=> follow|manage|ignore,
+  # mode		=> 755, # Exact mode of file
+  # owner		=> user_name|user_ID,
+  # path		=> "/full/path", # Same as namevar
+  # purge		=> true|false,
+  # recurse		=> true|false|inf|remote,
+  # recurselimit	=> $number,
+  # replace		=> true|false, # default true
+  # source		=> "puppet:///module-name/filename", # Can be an array [], first found used.
+  # sourceselect	=> first|all,
+  # target		=> notlink|??, # When using links?
+  # type		=> ??, # Read-only, for checking file type?
+}

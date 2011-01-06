@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: package resource
+# --
+package { "$1":
+  ## Details at http://docs.puppetlabs.com/references/latest/type.html#package
+  ## expand "meta" to insert all Metaparameters
+
+  # ensure	=> present|absent|purged|held|latest,
+  # name	=> $operatingsystem ? {
+  #        Debian => "",
+  #        Ubuntu => "",
+  #        RedHat => "",
+  #        darwin => "",
+  # }
+
+}

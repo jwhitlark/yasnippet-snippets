@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: exec resource
+# --
+exec { "$1":
+  ## Details at http://docs.puppetlabs.com/references/latest/type.html#exec
+  ## expand "meta" to insert all Metaparameters
+
+  # command	=> '/bin/date',
+  # cwd		=> '/tmp',
+  # environment => ???,
+  # group	=> group_id,
+  # logoutput	=> true|false|on_failure,
+  # onlyif	=> "cmd that returns 0 to pass",
+  # path	=> "search path",
+  # refresh	=> "", # Define a different command for refresh vs. create
+  # refreshonly => true|false,
+  # returns	=> 0, # Expected return code
+  # timeout	=> seconds,
+  # tries	=> count,
+  # try_sleep	=> 1, # time in seconds between tries
+  # unless	=> "", # run unless this cmd returns 0
+  # user	=> 'root', # Error output not captured if used
+}

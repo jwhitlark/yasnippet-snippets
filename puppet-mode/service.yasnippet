@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: service resource
+# --
+service { "$1":
+  # Details at http://docs.puppetlabs.com/references/latest/type.html#service
+  ## expand "meta" to insert all Metaparameters
+
+  # binary	=> ??,
+  # enable	=> true|false,
+  # ensure	=> stopped|running,
+  # hasrestart	=> true|false, # use restart instead of start, stop
+  # hasstatus	=> true|false,  # required?
+  # manifest	=> "path to config?",
+  # path	=> "/path:/path2", # search path for init scripts
+  # pattern	=> "", # search for in process table
+  # provider	=> daemontools, # Only if you don't want the default for platform
+  # restart	=> "", # Specify command manually
+  # start	=> "", # Specify command manually
+  # status	=> "", # Specify command manually
+  # stop	=> "", # Specify command manually
+}

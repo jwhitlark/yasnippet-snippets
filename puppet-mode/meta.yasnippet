@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: insert metaparameters
+# --
+  # alias		=> simplename,
+  # audit		=> true|false, # You can audit or manage, but not both
+  # before		=> Exec["nagios-rebuild"],
+  # noop		=> true|false, # Not sure how to use
+  # notify		=> Exec["nagios-rebuild"],  # opposite of subscribe
+  # require		=> Exec["nagios-rebuild"],  # make sure it happened first
+  # schedule		=> schedule_obj, # http://docs.puppetlabs.com/references/stable/metaparameter.html#schedule
+  # subscribe		=> Exec["nagios-rebuild"], # if this happens, we happen
+  # tag			=> foobar, # Used to run a subset of a configuration from the command line
